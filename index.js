@@ -8,7 +8,8 @@ var player2 = diceRoll();
 var dice1 = document.querySelector(".dice > .img1");
 var dice2 = document.querySelector(".dice > .img2");
 dice1.src = `./assets/images/dice${player1}.png`;
-dice2.src = `./assets/images/dice${player2}.png`;
+dice2.setAttribute("src", `./assets/images/dice${player2}.png`);
+// OR -> dice2.src = `./assets/images/dice${player2}.png`;
 var winningPlayer = document.querySelector("h1");
 
 if (player1 > player2) {
